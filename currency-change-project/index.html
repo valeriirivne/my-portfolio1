@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Exchange Rate Calculator</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  
+  <body>
+    <h1>Обмін валют</h1>
+    <p>Оберіть валюту, яку ви хочете обміняти</p>
+    <div class="container">
+        <p class="hint">Міняю</p>
+        
+      <div class="currency">
+        <select id="currency-one">
+          <option value="BYN" selected>BYN</option>
+          <option value="AUD">AUD</option>
+          <option value="AMD">AMD</option>
+          <option value="BGN">BGN</option>
+          <option value="UAH">UAH</option>
+          <option value="DKK">DKK</option>
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="PLN">PLN</option>
+          <option value="JPY">JPY</option>
+          <option value="IRR">IRR</option>
+          <option value="ISK">ISK</option>
+          <option value="CAD">CAD</option>
+          <option value="CNY">CNY</option>
+          <option value="KWD">KWD</option>
+          <option value="MDL">MDL</option>
+          <option value="NZD">NZD</option>
+          <option value="NOK">NOK</option>
+          <option value="RUB">RUB</option>
+          <option value="XDR">XDR</option>
+          <option value="SGD">SGD</option>
+          <option value="KGS">KGS</option>
+          <option value="KZT">KZT</option>
+          <option value="TRY">TRY</option>
+          <option value="CZK">CZK</option>
+          <option value="SEK">SEK</option>
+          <option value="CHF">CHF</option>
+        </select>
+        <input type="number" id="amount-one" placeholder="0" value="1" />
+      </div>
+      <div class="swap-button">
+        <button class="btn" id="swap">
+            <i class="fas fa-exchange-alt"></i></button>
+        <div class="rate" id="rate"></div>
+      </div>
+      <div class="currency">
+          <p class="hint">Отримую</p>
+        <select id="currency-two">
+          <option value="BYN">BYN</option>
+          <option value="AUD">AUD</option>
+          <option value="AMD">AMD</option>
+          <option value="BGN">BGN</option>
+          <option value="UAH" selected>UAH</option>
+          <option value="DKK">DKK</option>
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="PLN">PLN</option>
+          <option value="JPY">JPY</option>
+          <option value="IRR">IRR</option>
+          <option value="ISK">ISK</option>
+          <option value="CAD">CAD</option>
+          <option value="CNY">CNY</option>
+          <option value="KWD">KWD</option>
+          <option value="MDL">MDL</option>
+          <option value="NZD">NZD</option>
+          <option value="NOK">NOK</option>
+          <option value="RUB">RUB</option>
+          <option value="XDR">XDR</option>
+          <option value="SGD">SGD</option>
+          <option value="KGS">KGS</option>
+          <option value="KZT">KZT</option>
+          <option value="TRY">TRY</option>
+          <option value="CZK">CZK</option>
+          <option value="SEK">SEK</option>
+          <option value="CHF">CHF</option>
+        </select>
+        <input type="number" id="amount-two" placeholder="0" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+
+</html>
